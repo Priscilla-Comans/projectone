@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding:0;
+}
+
+body{
+    background: #3333332d url(./img/headphones.jpg) no-repeat
+    center center/cover;
+    color:whitesmoke;
+    /*Photo by Ryan Quintal on Unsplash*/
+}
+
+/*START OF GRID*/
+@media only screen and (max-width:760px) {
+.container2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:
+    'main-content'
+    'sidebar'
+    'box1'  
+    'box2'
+    'box3'
+    'box4'
+    'box5'
+    'footer';
+    grid-gap: 1rem;
+
+}
+}
+@media screen and (min-width: 760px){
+
+    .container2{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 2fr);
+        grid-template-areas:
+        'main-content main-content sidebar'
+        'box1 box1 box5'
+        'box2 box2 box5'
+        'box3 box3 box4'
+        'footer footer footer';
+        grid-gap: 1rem;
+    
+    }
+}
+
+.content{
+    grid-area: main-content;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.520);
+    color: white;
+
+}
+
+.sidebar{
+    grid-area: sidebar;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.520);
+    color: white;
+}
+#box1{
+    grid-area: box1;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.520);
+    color: white;
+}
+#box2{
+    grid-area: box2;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.520);
+    color: white;
+}
+#box3{
+    grid-area: box3;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.520);
+    color: white;
+}
+
+#box4{
+    grid-area: box4;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.520);
+    color: white;
+}
+
+#box5{
+    grid-area: box5;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.520);
+    color: white;
+}
+
+footer{
+    background: rgba(0, 0, 0, 0.520);
+    grid-area: footer;
+    text-align: center;
+    text-align: center;
+    color: white;
+}
+
+.header, .content, .sidebar, #box1, #box2, #box3, #box4, #box5, footer {
+    border: #321da7 2px solid;
+    padding: 0.5rem;
+
+}
+/*END OF GRID*/
+
+/*sidebar h3*/
+.sidebar h3{
+    color: powderblue;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+    font-size: x-large;
+    padding-bottom: 10px;
+}
+
+ol li {
+    list-style:center;
+    list-style-position: inside;
+    font-size: larger;
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+/*CONTENT*/
+.content h3{
+    font-size: x-large;
+    color: rgb(86, 74, 192);
+    text-shadow: 2px 2px black;
+    padding-bottom: 10px;
+}
+#box1,
+.content,
+#box2,
+#box3{
+    font-size: larger;
+}
+#box1 a, #box2 a, #box3 a,
+.content a{
+    color: purple;
+    text-decoration: none;
+    font-size:small;
+}
+#box1 a:hover,
+.content a:hover,
+#box2 a:hover,
+#box3 a:hover,
+#box4 a:hover{
+    color: rgba(0, 0, 0, 0.637);
+    background: pink;
+}
+
+/*box1*/
+#box1 h3{
+    color:deeppink;
+    font-size:x-large;
+    text-shadow: 2px 2px black;
+    padding-bottom: 5px;
+}
+#box1 h4{
+    color: fuchsia;
+    font-weight: 900;
+    text-shadow: 1.5px 1.5px black;
+    padding-bottom: 5px;
+}
+
+#box1 ul li,
+#box2 ul li{
+    font-size: medium;
+}
+/*END BOX1*/
+/* START box1 & 2*/
+#box2 h3 {
+    color:yellowgreen;
+    font-size:x-large;
+    text-shadow: 2px 2px black;
+    padding-bottom: 5px;
+}
+
+#box2 h4{
+    color: greenyellow;
+    font-weight: 900;
+    text-shadow: 1.5px 1.5px black;
+    padding-bottom: 5px;
+}
+#box3 h3 {
+    color:orange;
+    font-size:x-large;
+    text-shadow: 2px 2px black;
+    padding-bottom: 5px;
+}
+/* END box1 & 2*/
+/*START BOX4*/
+
+#box4 h3{
+    color:rgb(245, 57, 57);
+    font-size:x-large;
+    text-shadow: 2px 2px black;
+    padding-bottom: 5px;
+}
+
+#box4 ul li{
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+#box4 ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+#box4 a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+  
